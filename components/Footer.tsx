@@ -3,8 +3,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary py-12 text-white">
-      <div className="container mx-auto px-6 md:px-8">
+    <footer className="relative bg-primary text-white pt-16 pb-10 overflow-hidden">
+      <div className="absolute inset-0 bg-primary"></div>
+      <div className="absolute -top-20 left-1/2 w-[500px] h-[500px] bg-primary/20 blur-3xl rounded-full transform -translate-x-1/2"></div>
+
+      <div className="relative container mx-auto px-6 md:px-8 z-10">
         <div className="grid md:grid-cols-2 gap-12">
           {/* === Left Section === */}
           <div>
@@ -20,7 +23,7 @@ export default function Footer() {
               </Link>
             </div>
 
-            <h1 className="text-2xl md:text-3xl mb-4">
+            <h1 className="text-2xl md:text-3xl mb-4 font-semibold">
               Ingin berkonsultasi lebih lanjut?
             </h1>
 
@@ -55,22 +58,22 @@ export default function Footer() {
               <h4 className="font-semibold mb-3">Layanan Kami</h4>
               <ul className="space-y-2 text-blue-200">
                 <li>
-                  <Link href="/landing-page" className="hover:text-white transition">
+                  <Link href="/services/landing-page" className="hover:text-white transition">
                     Landing Page
                   </Link>
                 </li>
                 <li>
-                  <Link href="/ecommerce" className="hover:text-white transition">
+                  <Link href="/services/e-commerce" className="hover:text-white transition">
                     E-Commerce
                   </Link>
                 </li>
                 <li>
-                  <Link href="/erp" className="hover:text-white transition">
+                  <Link href="/services/erp" className="hover:text-white transition">
                     ERP
                   </Link>
                 </li>
                 <li>
-                  <Link href="/website-kustom" className="hover:text-white transition">
+                  <Link href="/services/custom-website" className="hover:text-white transition">
                     Website Kustom
                   </Link>
                 </li>
@@ -78,9 +81,10 @@ export default function Footer() {
             </div>
 
             <div>
-              <ul className="space-y-2 font-semibold mb-3">
+              <h4 className="font-semibold mb-3">Informasi</h4>
+              <ul className="space-y-2 text-blue-200">
                 <li>
-                  <Link href="/term-and-condition" className="hover:text-white transition">
+                  <Link href="/term-conditions" className="hover:text-white transition">
                     Terms & Conditions
                   </Link>
                 </li>
