@@ -77,16 +77,6 @@ export default function WhyChooseUs() {
             className="mx-auto mb-10"
           />
 
-          {/* Embed Instagram */}
-          <div className="max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-200">
-            <iframe
-              src="https://www.instagram.com/katalis.dev/embed"
-              width="100%"
-              height="480"
-              className="w-full"
-            ></iframe>
-          </div>
-
           <p className="text-gray-600 mt-4">
             Ikuti kami di{" "}
             <a
