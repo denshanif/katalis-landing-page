@@ -20,23 +20,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Katalis - Pemicu Pertumbuhan Digital Bisnis Anda",
     description: "Solusi website untuk pertumbuhan bisnis digital Anda",
-    url: "https://katalis.dev",
+    url: "https://katalisdev.my.id",
     siteName: "Katalis",
-    images: [
-      {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
     locale: "id_ID",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Katalis - Pemicu Pertumbuhan Digital Bisnis Anda",
-    description: "Solusi website untuk pertumbuhan bisnis digital Anda",
-    images: ["/images/og-image.png"],
+  alternates: {
+    canonical: "https://katalisdev.my.id",
   },
 };
 
